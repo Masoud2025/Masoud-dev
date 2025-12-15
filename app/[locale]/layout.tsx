@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { ThemeProvider } from "../components/providers/theme-provider";
 import "./globals.css";
 import MobileTabBar from "../components/Navbar/TabBar";
+import Navbar from "../components/Navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -34,6 +35,7 @@ export default async function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Navbar/>
           <MobileTabBar/>
         </ThemeProvider>
       </body>

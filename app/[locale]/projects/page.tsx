@@ -51,7 +51,7 @@ export default function ProjectsPage() {
   const [modalProject, setModalProject] = useState<Project | null>(null);
 
   return (
-    <section className="md:hidden px-4 py-8">
+    <section className="md:hidden px-4 py-8 mt-11">
       {/* <h1 className="text-2xl font-bold mb-6 text-center">Projects</h1> */}
 
       <div className="flex flex-col gap-4">

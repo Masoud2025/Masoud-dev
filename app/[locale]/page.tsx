@@ -37,7 +37,7 @@ export default function Home() {
         {/* <ThemeToggle></ThemeToggle> */}
       </div>
       {/* Navbar */}
-      <Navbar/>
+      {/* <Navbar/> */}
       {/* <MobileTabBar/> */}
       <Hero/>
     </div>
