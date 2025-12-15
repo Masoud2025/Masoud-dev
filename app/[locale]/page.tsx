@@ -20,9 +20,9 @@ export default function Home() {
         </h1>
       </div>
       <div className="text-center mt-8">
-        <Link href={"/en"} className="p-4 hover:bg-red-100 rounded-3xl">
+        <a href={"/en"} className="p-4 hover:bg-red-100 rounded-3xl">
           EN
-        </Link>
+        </a>
         | |
         <Link href={"/fa"} className="p-4 hover:bg-blue-100 rounded-3xl">
           FA
