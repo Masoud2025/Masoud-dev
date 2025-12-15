@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { ThemeToggle } from "../components/ThemToggle";
 import Navbar from "../components/Navbar/Navbar";
+import MobileTabBar from "../components/Navbar/TabBar";
 
 export default function Home() {
   const t = useTranslations("home");
@@ -36,6 +37,7 @@ export default function Home() {
       </div>
       {/* Navbar */}
       <Navbar/>
+      <MobileTabBar/>
     </div>
   );
 }
