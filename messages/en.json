@@ -1,1 +1,11 @@
-{"home":{"header":"Welcome to your Site!", "paragraphs":"This is multilingual Website Created with next-intel!","Data":"It's Very Good Website"}}
+{
+  "home": {
+    "header": "Welcome to your Site!",
+    "paragraphs": "This is multilingual Website Created with next-intel!",
+    "Data": "It's Very Good Website",
+    "HomeLink":"Home",
+    "AboutNavLink":"About",
+    "PortfolioNavLink":"Portfolio",
+    "ContactNavLink":"Contact"
+  }
+}

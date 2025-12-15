@@ -1,13 +1,14 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { ThemeToggle } from "../components/ThemToggle";
+import Navbar from "../components/Navbar/Navbar";
 
 export default function Home() {
   const t = useTranslations("home");
 
   return (
     <div className=" ">
-      <div className="text-center text-4xl font-bold">
+      {/* <div className="text-center text-4xl font-bold">
         <h1 className="rounded-2xl border-2 p-8 font-extrabold  mb-16">
           {t("header")}
         </h1>
@@ -27,11 +28,14 @@ export default function Home() {
         <Link href={"/fa"} className="p-4 hover:bg-blue-100 rounded-3xl">
           FA
         </Link>
-      </div>
+      </div> */}
       <br />
       <div className="text-center text-5xl ">
-        <ThemeToggle></ThemeToggle>
+        {/* Them switcher button */}
+        {/* <ThemeToggle></ThemeToggle> */}
       </div>
+      {/* Navbar */}
+      <Navbar/>
     </div>
   );
 }
