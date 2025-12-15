@@ -1,13 +1,13 @@
 "use client";
-
+import { Home, PhoneCall, User, WalletCards } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const tabs = [
-  { href: "/", label: "Home", icon: "🏠" },
-  { href: "/about", label: "About", icon: "👤" },
-  { href: "/projects", label: "Work", icon: "💼" },
-  { href: "/contact", label: "Contact", icon: "✉️" },
+  { href: "/", label: "Home", icon: <Home /> },
+  { href: "/about", label: "About", icon: <User /> },
+  { href: "/projects", label: "Work", icon: <WalletCards /> },
+  { href: "/contact", label: "Contact", icon: <PhoneCall /> },
 ] as const;
 
 export default function MobileTabBar() {
@@ -23,9 +23,7 @@ export default function MobileTabBar() {
         className="
           relative flex items-center justify-between
           rounded-3xl px-6 py-3
-          bg-white/70 dark:bg-zinc-900/70
-          backdrop-blur-xl
-          shadow-[0_10px_30px_rgba(0,0,0,0.12)]
+         
           border border-white/20 dark:border-white/10
         "
       >

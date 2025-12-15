@@ -1,11 +1,11 @@
 {
   "home": {
-    "header": "Welcome to your Site!",
-    "paragraphs": "This is multilingual Website Created with next-intel!",
-    "Data": "It's Very Good Website",
-    "HomeLink":"Home",
-    "AboutNavLink":"About",
-    "PortfolioNavLink":"Portfolio",
-    "ContactNavLink":"Contact"
+    "header": "Building clean, scalable\nweb experiences.",
+    "paragraphs": "I design and develop modern web applications with a strong focus on performance, usability, and maintainable code.",
+    "Data": "Frontend / Full-Stack Developer",
+    "HomeLink": "Home",
+    "AboutNavLink": "About",
+    "PortfolioNavLink": "View Projects",
+    "ContactNavLink": "Contact"
   }
 }

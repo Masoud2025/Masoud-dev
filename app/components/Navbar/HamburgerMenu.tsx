@@ -8,32 +8,45 @@ const HamburgerMenu: React.FC = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="md:hidden">
+    <div className="md:hidden relative">
+      {/* Hamburger Button */}
       <button
         onClick={() => setOpen(!open)}
         aria-label="Toggle Menu"
-        className="p-2 rounded  transition"
+        className="p-2 rounded-full border border-current hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-all duration-200"
       >
         {open ? "✖️" : "☰"}
       </button>
 
-      {open && (
-        <div className="text-center absolute right-0 mt-2 w-48  shadow-lg rounded-md flex flex-col p-2 z-50">
-          <Link href="/" className="p-2  rounded">
-            <ThemeToggle />
-          </Link>
-
-          <div className="text-center mt-8">
-            <a href={"/en"} className="p-4 hover:bg-red-100 rounded-3xl">
-              EN
-            </a>
-            | |
-            <Link href={"/fa"} className="p-4 hover:bg-blue-100 rounded-3xl">
-              FA
-            </Link>
-          </div>
+      {/* Menu Panel */}
+      <div
+        className={`absolute right-0 mt-2 w-40 rounded-full border border-current backdrop-blur-sm bg-white/0 dark:bg-neutral-900/0 shadow-md overflow-hidden flex flex-col items-center p-4 transition-all duration-300 transform origin-top ${
+          open
+            ? "scale-100 opacity-100"
+            : "scale-95 opacity-0 pointer-events-none"
+        }`}
+      >
+        {/* Theme Toggle */}
+        <div className="mb-4">
+          <ThemeToggle />
         </div>
-      )}
+
+        {/* Language Switch */}
+        <div className="flex gap-4 text-sm font-medium">
+          <Link
+            href="/en"
+            className="px-3 py-1 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 transition"
+          >
+            EN
+          </Link>
+          <Link
+            href="/fa"
+            className="px-3 py-1 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 transition"
+          >
+            FA
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };

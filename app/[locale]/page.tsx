@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ThemeToggle } from "../components/ThemToggle";
 import Navbar from "../components/Navbar/Navbar";
 import MobileTabBar from "../components/Navbar/TabBar";
+import Hero from "../components/Hero";
 
 export default function Home() {
   const t = useTranslations("home");
@@ -38,6 +39,7 @@ export default function Home() {
       {/* Navbar */}
       <Navbar/>
       <MobileTabBar/>
+      <Hero/>
     </div>
   );
 }

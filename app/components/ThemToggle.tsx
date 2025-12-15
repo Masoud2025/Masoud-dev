@@ -1,5 +1,6 @@
 "use client";
 
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 export function ThemeToggle() {
@@ -12,7 +13,7 @@ export function ThemeToggle() {
       onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
       className="hover:cursor-pointer text-2xl"
     >
-       {currentTheme === "dark" ? "☀️" : "🌙"}
+      {currentTheme === "dark" ? <Sun /> : <Moon />}
     </button>
   );
 }
