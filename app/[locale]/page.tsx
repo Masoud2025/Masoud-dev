@@ -38,7 +38,7 @@ export default function Home() {
       </div>
       {/* Navbar */}
       <Navbar/>
-      <MobileTabBar/>
+      {/* <MobileTabBar/> */}
       <Hero/>
     </div>
   );

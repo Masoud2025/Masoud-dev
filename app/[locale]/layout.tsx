@@ -4,6 +4,7 @@ import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { ThemeProvider } from "../components/providers/theme-provider";
 import "./globals.css";
+import MobileTabBar from "../components/Navbar/TabBar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -33,6 +34,7 @@ export default async function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <MobileTabBar/>
         </ThemeProvider>
       </body>
     </html>
