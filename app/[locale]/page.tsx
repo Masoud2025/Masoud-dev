@@ -20,7 +20,7 @@ export default function Home() {
         </h1>
       </div>
       <div className="text-center mt-8">
-        <Link href={"/"} className="p-4 hover:bg-red-100 rounded-3xl">
+        <Link href={"/en"} className="p-4 hover:bg-red-100 rounded-3xl">
           EN
         </Link>
         | |
