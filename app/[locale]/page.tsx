@@ -4,6 +4,12 @@ import { ThemeToggle } from "../components/ThemToggle";
 import Navbar from "../components/Navbar/Navbar";
 import MobileTabBar from "../components/Navbar/TabBar";
 import Hero from "../components/Hero";
+import WhoAmI from "../components/WhoAmI";
+import MySkills from "../components/MySkills";
+import MyCertificates from "../components/MyCertificates";
+import MyProjects from "../components/MyProjects";
+import LetsConnect from "../components/LetsConnect";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const t = useTranslations("home");
@@ -40,6 +46,12 @@ export default function Home() {
       {/* <Navbar/> */}
       {/* <MobileTabBar/> */}
       <Hero/>
+      <WhoAmI/>
+      <MySkills/>
+      <MyCertificates/>
+      <MyProjects/>
+      <LetsConnect/>
+      <Footer/>
     </div>
   );
 }
