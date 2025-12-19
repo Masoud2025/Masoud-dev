@@ -9,7 +9,7 @@ import Logo from "./Logo";
 const Navbar: React.FC = () => {
   const t = useTranslations("home");
   return (
-    <header className="w-full flex items-center justify-between p-4 shadow-md fixed top-0 z-50">
+    <header className="w-full flex items-center justify-between p-4 fixed top-0 z-50">
       <Logo />
       {/* Desktop Links */}
       <nav className="hidden md:flex space-x-3">

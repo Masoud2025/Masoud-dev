@@ -1,11 +1,11 @@
 import { routing } from "@/i18n/routing";
-import type { Metadata,Viewport  } from "next";
+import type { Metadata, Viewport } from "next";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
+import Navbar from "../components/Navbar/Navbar";
+import MobileTabBar from "../components/Navbar/TabBar";
 import { ThemeProvider } from "../components/providers/theme-provider";
 import "./globals.css";
-import MobileTabBar from "../components/Navbar/TabBar";
-import Navbar from "../components/Navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -35,8 +35,8 @@ export default async function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          <Navbar/>
-          <MobileTabBar/>
+          <Navbar />
+          <MobileTabBar />
         </ThemeProvider>
       </body>
     </html>
