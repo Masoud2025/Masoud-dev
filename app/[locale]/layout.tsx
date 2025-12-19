@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import Navbar from "../components/Navbar/Navbar";
 import MobileTabBar from "../components/Navbar/TabBar";
 import { ThemeProvider } from "../components/providers/theme-provider";
+import { quicksand } from "../fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -27,7 +28,7 @@ export default async function RootLayout({
   }
   return (
     <html lang="en">
-      <body className={` antialiased`}>
+      <body className={` ${quicksand.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
