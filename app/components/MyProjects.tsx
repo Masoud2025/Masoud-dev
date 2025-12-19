@@ -60,7 +60,7 @@ const MyProjects: React.FC = () => {
         >
           My Projects
         </h2>
-        <p className="mt-3 text-gray-600">
+        <p className="mt-3 ">
           Selected projects that showcase my frontend skills
         </p>
       </header>

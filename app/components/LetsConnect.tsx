@@ -39,9 +39,9 @@ const LetsConnect: React.FC<LetsConnectProps> = ({
         id="connect-title"
         className="text-3xl font-semibold tracking-tight mb-6"
       >
-        Let&apos;s Connect!
+        Better Call 𝕸𝖆𝖘𝖔𝖚𝖉
       </h2>
-      <p className="mb-10 text-gray-600">
+      <p className="mb-10 ">
         Feel free to reach out via social media or send me a message directly.
       </p>
 

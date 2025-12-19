@@ -6,6 +6,12 @@
     "HomeLink": "Home",
     "AboutNavLink": "About",
     "PortfolioNavLink": " Projects",
-    "ContactNavLink": "Contact"
+    "ContactNavLink": "Contact",
+    "WhoAmI": "Who am I ",
+    "AboutMe": "My name is Masoud Jafari. I am a 22-year-old self-taught frontend developer based in Tehran, Iran. I specialize in building responsive and user-friendly web applications using HTML, CSS, JavaScript, Bootstrap, and React.js. Frontend development aligns with all of my passions—it combines creativity and problem-solving with teamwork and management skills. I enjoy the fast-paced evolution of modern web technologies and continuously explore new frameworks and tools to improve my craft.",
+    "DownloadResume": "Download Resume",
+    "ViewProjects": "Projects",
+    "MySkills": "My Skills",
+    "MySkillsSubtitle":"Technologies and abilities I use to build modern web applications"
   }
 }

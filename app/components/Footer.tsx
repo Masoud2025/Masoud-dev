@@ -16,7 +16,7 @@ const Footer: React.FC<FooterProps> = ({
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10">
+    <footer className=" py-10">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Left: Copyright */}
         <p className="text-sm">&copy; {currentYear} Masoud Jafari. All rights reserved.</p>

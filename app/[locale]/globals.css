@@ -4,7 +4,7 @@
   --foreground: #171717;
 }
 ::selection {
-  background: rgba(99, 102, 241, 0.35); /* soft purple */
+  background: rgba(255, 0, 0, 0.35); /* soft purple */
   color: #ffffff;
 }
 

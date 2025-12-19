@@ -47,9 +47,9 @@ export default function Home() {
       {/* <MobileTabBar/> */}
       <Hero/>
       <WhoAmI/>
+      <MyProjects/>
       <MySkills/>
       <MyCertificates/>
-      <MyProjects/>
       <LetsConnect/>
       <Footer/>
     </div>
