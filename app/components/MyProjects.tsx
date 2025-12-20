@@ -1,6 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import imh from "../../public/project1.png"
 interface Project {
   id: number;
   title: string;
@@ -18,7 +16,7 @@ const projects: Project[] = [
     title: "Portfolio Website",
     description: "Personal portfolio built with React and modern UI practices.",
     image: "project1.png",
-    liveUrl: "#",
+    liveUrl: "/works/00/E-commerce-UI",
     repoUrl: "#",
     featured: true,
     technologies: ["React", "Tailwind", "TypeScript"],
@@ -27,7 +25,8 @@ const projects: Project[] = [
     id: 2,
     title: "E-commerce UI",
     description: "Responsive product pages and shopping flow.",
-    image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=800&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=800&fit=crop",
     liveUrl: "#",
     repoUrl: "#",
     technologies: ["Next.js", "CSS", "Redux"],
@@ -36,7 +35,8 @@ const projects: Project[] = [
     id: 3,
     title: "Dashboard App",
     description: "Admin dashboard with charts and clean layout.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=800&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=800&fit=crop",
     liveUrl: "#",
     repoUrl: "#",
     technologies: ["React", "Chart.js", "Node.js"],
@@ -45,7 +45,8 @@ const projects: Project[] = [
     id: 4,
     title: "Landing Page",
     description: "High-conversion landing page design.",
-    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=800&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=800&fit=crop",
     liveUrl: "#",
     repoUrl: "#",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -85,7 +86,7 @@ const MyProjects = () => {
                 alt={project.title}
                 className="h-full w-full object-cover object-top transition-all duration-[4000ms] ease-linear group-hover:object-bottom"
               />
-              
+
               {/* Featured badge */}
               {project.featured && (
                 <span className="absolute left-4 top-4 rounded-full bg-gray-900 px-3 py-1 text-xs font-medium text-white">
@@ -97,8 +98,12 @@ const MyProjects = () => {
             {/* Content - Always Visible */}
             <div className="p-5 space-y-4">
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">{project.title}</h3>
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed">{project.description}</p>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {project.title}
+                </h3>
+                <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+                  {project.description}
+                </p>
               </div>
 
               {/* Technologies */}
