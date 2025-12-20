@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-
+import React from "react";
+import imh from "../../public/project1.png"
 interface Project {
   id: number;
   title: string;
@@ -9,50 +9,55 @@ interface Project {
   liveUrl?: string;
   repoUrl?: string;
   featured?: boolean;
+  technologies?: string[];
 }
 
 const projects: Project[] = [
   {
     id: 1,
-    title: 'Portfolio Website',
-    description: 'Personal portfolio built with React and modern UI practices.',
-    image: 'project1.png',
-    liveUrl: '#',
-    repoUrl: '#',
+    title: "Portfolio Website",
+    description: "Personal portfolio built with React and modern UI practices.",
+    image: "project1.png",
+    liveUrl: "#",
+    repoUrl: "#",
     featured: true,
+    technologies: ["React", "Tailwind", "TypeScript"],
   },
   {
     id: 2,
-    title: 'E-commerce UI',
-    description: 'Responsive product pages and shopping flow.',
-    image: 'project1.png',
-    liveUrl: '#',
-    repoUrl: '#',
+    title: "E-commerce UI",
+    description: "Responsive product pages and shopping flow.",
+    image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=800&fit=crop",
+    liveUrl: "#",
+    repoUrl: "#",
+    technologies: ["Next.js", "CSS", "Redux"],
   },
   {
     id: 3,
-    title: 'Dashboard App',
-    description: 'Admin dashboard with charts and clean layout.',
-    image: 'project1.png',
-    liveUrl: '#',
-    repoUrl: '#',
+    title: "Dashboard App",
+    description: "Admin dashboard with charts and clean layout.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=800&fit=crop",
+    liveUrl: "#",
+    repoUrl: "#",
+    technologies: ["React", "Chart.js", "Node.js"],
   },
   {
     id: 4,
-    title: 'Landing Page',
-    description: 'High-conversion landing page design.',
-    image: 'project1.png',
-    liveUrl: '#',
-    repoUrl: '#',
+    title: "Landing Page",
+    description: "High-conversion landing page design.",
+    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=800&fit=crop",
+    liveUrl: "#",
+    repoUrl: "#",
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
 ];
 
-const MyProjects: React.FC = () => {
+const MyProjects = () => {
   return (
     <section
+      id="my-projects"
       aria-labelledby="projects-title"
       className="max-w-6xl mx-auto px-4 py-20"
-      id='my-projects'
     >
       <header className="mb-12 text-center">
         <h2
@@ -61,7 +66,7 @@ const MyProjects: React.FC = () => {
         >
           My Projects
         </h2>
-        <p className="mt-3 ">
+        <p className="mt-3 text-gray-600">
           Selected projects that showcase my frontend skills
         </p>
       </header>
@@ -70,45 +75,54 @@ const MyProjects: React.FC = () => {
         {projects.map((project) => (
           <article
             key={project.id}
-            className={`group relative overflow-hidden rounded-2xl border
-              ${project.featured ? 'border-gray-900' : 'border-gray-200'}`}
+            className={`group relative overflow-hidden rounded-2xl border bg-white
+              ${project.featured ? "border-gray-900" : "border-gray-200"}`}
           >
             {/* Image */}
-<div className="group h-96 w-full overflow-hidden">
-  <img
-    src={project.image}
-    alt={project.title}
-    className="
-      w-full
-      object-cover
-      object-top
-      transition-transform
-      duration-[1800ms]
-      ease-linear
-      group-hover:-translate-y-[35%]
-    "
-  />
-</div>
+            <div className="h-48 w-full overflow-hidden relative">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="h-full w-full object-cover object-top transition-all duration-[4000ms] ease-linear group-hover:object-bottom"
+              />
+              
+              {/* Featured badge */}
+              {project.featured && (
+                <span className="absolute left-4 top-4 rounded-full bg-gray-900 px-3 py-1 text-xs font-medium text-white">
+                  Featured
+                </span>
+              )}
+            </div>
 
+            {/* Content - Always Visible */}
+            <div className="p-5 space-y-4">
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900">{project.title}</h3>
+                <p className="mt-2 text-sm text-gray-600 leading-relaxed">{project.description}</p>
+              </div>
 
+              {/* Technologies */}
+              {project.technologies && (
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech, index) => (
+                    <span
+                      key={index}
+                      className="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              )}
 
-            {/* Overlay */}
-            <div className="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/70 via-black/30 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <h3 className="text-lg font-semibold text-white">
-                {project.title}
-              </h3>
-
-              <p className="mt-1 text-sm text-gray-200">
-                {project.description}
-              </p>
-
-              <div className="mt-4 flex gap-3">
+              {/* Buttons */}
+              <div className="flex flex-wrap gap-3 pt-2">
                 {project.liveUrl && (
                   <a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full bg-white px-4 py-2 text-xs font-medium text-gray-900 transition hover:bg-gray-200"
+                    className="rounded-full bg-gray-900 px-4 py-2 text-xs font-medium text-white transition hover:bg-gray-800"
                   >
                     Live Demo
                   </a>
@@ -119,20 +133,13 @@ const MyProjects: React.FC = () => {
                     href={project.repoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full border border-white px-4 py-2 text-xs font-medium text-white transition hover:bg-white hover:text-gray-900"
+                    className="rounded-full border border-gray-900 px-4 py-2 text-xs font-medium text-gray-900 transition hover:bg-gray-100"
                   >
                     Source Code
                   </a>
                 )}
               </div>
             </div>
-
-            {/* Featured badge */}
-            {project.featured && (
-              <span className="absolute left-4 top-4 rounded-full bg-gray-900 px-3 py-1 text-xs font-medium text-white">
-                Featured
-              </span>
-            )}
           </article>
         ))}
       </div>
