@@ -79,7 +79,7 @@ const MySkills: React.FC = () => {
               ${
                 skill.highlight
                   ? "border-gray-900 bg-gray-900 text-white"
-                  : "border-gray-200 bg-white"
+                  : "border-gray-200"
               }`}
           >
             <h3 className="mb-3 text-xl font-semibold">{skill.title}</h3>

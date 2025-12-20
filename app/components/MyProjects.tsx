@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 
 interface Project {
@@ -15,7 +16,7 @@ const projects: Project[] = [
     id: 1,
     title: 'Portfolio Website',
     description: 'Personal portfolio built with React and modern UI practices.',
-    image: '/projects/portfolio.jpg',
+    image: 'project1.png',
     liveUrl: '#',
     repoUrl: '#',
     featured: true,
@@ -24,7 +25,7 @@ const projects: Project[] = [
     id: 2,
     title: 'E-commerce UI',
     description: 'Responsive product pages and shopping flow.',
-    image: '/projects/ecommerce.jpg',
+    image: 'project1.png',
     liveUrl: '#',
     repoUrl: '#',
   },
@@ -32,7 +33,7 @@ const projects: Project[] = [
     id: 3,
     title: 'Dashboard App',
     description: 'Admin dashboard with charts and clean layout.',
-    image: '/projects/dashboard.jpg',
+    image: 'project1.png',
     liveUrl: '#',
     repoUrl: '#',
   },
@@ -40,7 +41,7 @@ const projects: Project[] = [
     id: 4,
     title: 'Landing Page',
     description: 'High-conversion landing page design.',
-    image: '/projects/landing.jpg',
+    image: 'project1.png',
     liveUrl: '#',
     repoUrl: '#',
   },
@@ -73,14 +74,26 @@ const MyProjects: React.FC = () => {
               ${project.featured ? 'border-gray-900' : 'border-gray-200'}`}
           >
             {/* Image */}
-            <img
-              src={project.image}
-              alt={project.title}
-              className="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-            />
+<div className="group h-96 w-full overflow-hidden">
+  <img
+    src={project.image}
+    alt={project.title}
+    className="
+      w-full
+      object-cover
+      object-top
+      transition-transform
+      duration-[1800ms]
+      ease-linear
+      group-hover:-translate-y-[35%]
+    "
+  />
+</div>
+
+
 
             {/* Overlay */}
-            <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div className="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/70 via-black/30 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               <h3 className="text-lg font-semibold text-white">
                 {project.title}
               </h3>

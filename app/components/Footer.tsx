@@ -1,3 +1,4 @@
+import { ExternalLink, Instagram, Linkedin, QrCode } from 'lucide-react';
 import React from 'react';
 
 interface FooterProps {
@@ -31,10 +32,18 @@ const Footer: React.FC<FooterProps> = ({
 
         {/* Right: Social Links */}
         <div className="flex gap-4 text-lg">
-          <a href={`mailto:${email}`} aria-label="Email" className="hover:text-white transition">📧</a>
-          <a href={github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-white transition">💻</a>
-          <a href={linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-white transition">🔗</a>
-          <a href={twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-white transition">🐦</a>
+          <a href={`mailto:${email}`} aria-label="Email" className="hover:text-white transition">
+            <QrCode />
+          </a>
+          <a href={github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-white transition">
+            <Instagram />
+          </a>
+          <a href={linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-white transition">
+            <Linkedin />
+          </a>
+          <a href={twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-white transition">
+            <ExternalLink />
+          </a>
         </div>
       </div>
     </footer>
