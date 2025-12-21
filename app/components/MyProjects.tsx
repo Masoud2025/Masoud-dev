@@ -16,7 +16,8 @@ const projects: Project[] = [
     title: "Online Shop UI",
     description: "Personal portfolio built with React and modern UI practices.",
     image: "onlineShopUI.png",
-    liveUrl: "https://portfolio-git-main-mwano521-gmailcoms-projects.vercel.app/showcase/demo1",
+    liveUrl:
+      "https://masoud-jafari.vercel.app/showcase/demo1",
     repoUrl: "#",
     featured: true,
     technologies: ["React", "Tailwind", "TypeScript"],
@@ -26,8 +27,7 @@ const projects: Project[] = [
     title: "Hashtiva platform",
     description: "Responsive product pages and shopping flow.",
     image: "hastiva.png",
-    liveUrl:
-      "https://hashtiva-git-main-mwano521-gmailcoms-projects.vercel.app/",
+    liveUrl: "https://hashtiva.vercel.app/",
     repoUrl: "#",
     technologies: ["Next.js", "CSS", "Redux"],
   },
@@ -37,7 +37,7 @@ const projects: Project[] = [
     description: "Admin dashboard with charts and clean layout.",
     image: "3D.png",
     liveUrl:
-      "https://portfolio-git-main-mwano521-gmailcoms-projects.vercel.app/",
+      "https://masoud-jafari.vercel.app/",
     repoUrl: "#",
     technologies: ["React", "Chart.js", "Node.js"],
   },
@@ -45,9 +45,9 @@ const projects: Project[] = [
     id: 4,
     title: "Landing Page UI",
     description: "High-conversion landing page design.",
-    image:
-      "websiteUI.png",
-    liveUrl: "https://portfolio-git-main-mwano521-gmailcoms-projects.vercel.app/showcase/demo5",
+    image: "websiteUI.png",
+    liveUrl:
+      "https://masoud-jafari.vercel.app/showcase/demo5",
     repoUrl: "#",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
