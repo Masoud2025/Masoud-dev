@@ -13,41 +13,41 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Portfolio Website",
+    title: "Online Shop UI",
     description: "Personal portfolio built with React and modern UI practices.",
-    image: "project1.png",
-    liveUrl: "/works/00/E-commerce-UI",
+    image: "onlineShopUI.png",
+    liveUrl: "https://portfolio-git-main-mwano521-gmailcoms-projects.vercel.app/showcase/demo1",
     repoUrl: "#",
     featured: true,
     technologies: ["React", "Tailwind", "TypeScript"],
   },
   {
     id: 2,
-    title: "E-commerce UI",
+    title: "Hashtiva platform",
     description: "Responsive product pages and shopping flow.",
-    image:
-      "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=800&fit=crop",
-    liveUrl: "#",
+    image: "hastiva.png",
+    liveUrl:
+      "https://hashtiva-git-main-mwano521-gmailcoms-projects.vercel.app/",
     repoUrl: "#",
     technologies: ["Next.js", "CSS", "Redux"],
   },
   {
     id: 3,
-    title: "Dashboard App",
+    title: "3D Platform ",
     description: "Admin dashboard with charts and clean layout.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=800&fit=crop",
-    liveUrl: "#",
+    image: "3D.png",
+    liveUrl:
+      "https://portfolio-git-main-mwano521-gmailcoms-projects.vercel.app/",
     repoUrl: "#",
     technologies: ["React", "Chart.js", "Node.js"],
   },
   {
     id: 4,
-    title: "Landing Page",
+    title: "Landing Page UI",
     description: "High-conversion landing page design.",
     image:
-      "https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=800&fit=crop",
-    liveUrl: "#",
+      "websiteUI.png",
+    liveUrl: "https://portfolio-git-main-mwano521-gmailcoms-projects.vercel.app/showcase/demo5",
     repoUrl: "#",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
